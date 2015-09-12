@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prompt"
+        android:text="@string/prompt"
+        android:layout_marginTop="15sp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:numeric="integer"
+        android:ems="19"
+        android:textSize="18sp"
+        android:id="@+id/inputNumber"
+        android:layout_below="@+id/prompt"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+        <Button
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:id="@+id/start"
+        android:longClickable="false"
+        android:layout_below="@+id/inputNumber"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:text=""
+        android:textIsSelectable="true"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ScrollView android:id="@+id/textAreaScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:scrollbars="vertical">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result2"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:text=""
+        android:textIsSelectable="true"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+    </ScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/runtime"
+        android:text=""
+        android:layout_below="@+id/result2"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/author"
+        android:layout_below="@+id/runtime"
+        android:text="@string/author"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
